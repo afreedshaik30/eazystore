@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  font-family: "Inter";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 200;
+  src: url(assets/fonts/Inter-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  src: url(assets/fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url(assets/fonts/Inter-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url(assets/fonts/Inter-Bold.ttf);
+}
+
+/* Hero Section */
+.custom-dots li button:before {
+  color: #4b5563;
+  font-size: 10px;
+  opacity: 0.8;
+}
+.custom-dots li.slick-active button:before {
+  color: #1f2937;
+  font-size: 12px;
+  opacity: 1;
+}
+
+.hero-slider .slick-list {
+  padding: 0 !important; /* remove default padding */
+  margin: 0 !important; /* remove default margin */
+}
+
+.hero-slider .slick-slide {
+  padding: 0 !important; /* remove slide padding */
+  margin: 0 !important; /* remove slide margin */
+}
+
+.react-slider-custom-item {
+  max-width: 220px;
+  margin: auto;
+}
+
+.react-slider-custom-item img {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.slick-slide {
+  padding: 0 8px;
+}
+
+@media (max-width: 768px) {
+  .slick-prev,
+  .slick-next {
+    display: none !important;
+  }
+}
